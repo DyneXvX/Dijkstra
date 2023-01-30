@@ -44,10 +44,5 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"DyneXvX_Dijkstra" /o:"dynexvx" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" 
-          dotnet sonarscanner begin /k:"<sonar-project-key>"
-          /d:sonar.login="<sonar-token>"
-          /d:sonar.cs.dotcover.reportsPaths=dotCover.Output.html
-          dotnet build –no-incremental
-          dotnet dotcover test --dcReportType=HTML
-          dotnet sonarscanner end /d:sonar.login="<sonar-token>"
+          dotnet build
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
