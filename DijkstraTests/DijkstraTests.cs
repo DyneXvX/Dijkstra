@@ -27,10 +27,10 @@ namespace DijkstraAlgorithm.Tests
             int verticesCount = 8;
 
             //act
-            Dijkstra.DijkstraAlgo(graph, source, verticesCount);
 
             //assert
             Assert.AreEqual(8, verticesCount);
+            Dijkstra.DijkstraAlgo(graph, source, verticesCount);
         }
     }
 }
