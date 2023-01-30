@@ -6,7 +6,7 @@ using System.Diagnostics;
 
 namespace DijkstraAlgorithm
 {
-    public class Dijkstra
+    public static class Dijkstra
     {
         private static int MinimumDistance(int[] distance, bool[] shortestPathTreeSet, int verticesCount)
         {
