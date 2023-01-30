@@ -55,6 +55,9 @@ namespace DijkstraAlgorithm.Tests
 
             //act
             Dijkstra.DijkstraAlgo(graph, source, verticesCount);
+
+            //assert
+            Assert.AreEqual(9, verticesCount);
         }
     }
 }
