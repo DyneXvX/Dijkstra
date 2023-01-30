@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Diagnostics;
-
-namespace DijkstraAlgorithm
+﻿namespace DijkstraAlgorithm
 {
-    internal class Dijkstra
+    public static class Dijkstra
     {
         private static int MinimumDistance(int[] distance, bool[] shortestPathTreeSet, int verticesCount)
         {
